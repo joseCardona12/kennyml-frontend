@@ -7,11 +7,10 @@ import {
   GroupTextArea,
   inputAlert,
 } from "@/ui/molecules";
-import { Button, Select, TextArea } from "@/ui/atoms";
+import { Button } from "@/ui/atoms";
 import { ISelect, ITask } from "@/app/core/application/interfaces";
 import { useModalState } from "@/app/core/application/global-state";
 import { useState } from "react";
-import { TaskPort } from "@/app/core/application/ports";
 import { TaskService } from "@/app/infrastructure/services";
 import { ITaskResponse, ITaskResponseError } from "@/app/core/application/dtos";
 import { useRouter } from "next/navigation";

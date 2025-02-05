@@ -1,5 +1,5 @@
 "use client";
-import { IDataNav, ITask } from "@/app/core/application/interfaces";
+import { IDataNav } from "@/app/core/application/interfaces";
 import "./dashboardTemplate.styles.scss";
 import { IconGithub, IconPlus } from "@/assets/icons";
 import { IconButton, Title } from "@/ui/atoms";
@@ -20,7 +20,9 @@ export default function DashbaordTemplate({ tasks }: IDashboardTemplateProps) {
 
   const dataTasks = tasks as ITaskResponse;
   const OpenTasks = dataTasks.tasks.filter((task) => task.status_id === "open");
-  const ClosedTasks = dataTasks.tasks.filter((task) => task.status_id === "closed");
+  const ClosedTasks = dataTasks.tasks.filter(
+    (task) => task.status_id === "closed"
+  );
   const dataNavbar: IDataNav[] = [
     { item_name: "All", count: dataTasks.tasks.length.toString() },
     {
@@ -35,9 +37,9 @@ export default function DashbaordTemplate({ tasks }: IDashboardTemplateProps) {
     console.log(showModal, "modal");
   };
 
-  const handleClickCard = (id: number): void => {
-    router.push(`dashboard/task/${id}`);
-  };
+  // const handleClickCard = (id: number): void => {
+  //   router.push(`dashboard/task/${id}`);
+  // };
 
   return (
     <div className="content-dashboard">

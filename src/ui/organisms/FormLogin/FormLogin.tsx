@@ -1,5 +1,5 @@
 "use client";
-import { IconEmail, IconEye, IconLock, IconUser } from "@/assets/icons";
+import { IconEmail, IconEye, IconLock } from "@/assets/icons";
 import "./formLogin.styles.scss";
 import { Button } from "@/ui/atoms";
 import { GroupInput } from "@/ui/molecules";
