@@ -1,0 +1,8 @@
+div.content-text-area {
+  display: flex;
+  gap: var(--padding-small);
+  background-color: var(--color-blue-light);
+  padding: var(--padding-small);
+  padding-left: 0;
+  border-radius: var(--border-radius-small);
+}

@@ -1,0 +1,11 @@
+div.content-select {
+  display: flex;
+  gap: var(--padding-small);
+  background-color: var(--color-blue-light);
+  padding: var(--padding-small);
+  border-radius: var(--border-radius-small);
+
+  &:hover {
+    border: 1px solid var(--color-blue);
+  }
+}

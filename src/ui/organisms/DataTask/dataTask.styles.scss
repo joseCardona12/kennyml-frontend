@@ -1,0 +1,9 @@
+div.task-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+
+  p.task-info-data {
+    color: var(--color-red);
+  }
+}

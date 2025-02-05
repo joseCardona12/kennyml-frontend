@@ -1,0 +1,9 @@
+input.input {
+  background-color: var(--color-blue-light);
+  padding: var(--padding-small);
+  border-radius: var(--border-radius-medium);
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}

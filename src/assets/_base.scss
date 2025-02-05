@@ -1,0 +1,14 @@
+// Create utils class
+
+.d-flex-gap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+}
+
+.d-flex-gap-medium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--padding-medium);
+}

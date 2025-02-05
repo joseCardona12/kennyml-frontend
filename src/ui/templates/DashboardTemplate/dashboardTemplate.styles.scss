@@ -1,0 +1,22 @@
+div.content-dashboard {
+  padding: var(--padding-big);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-big);
+  background-color: var(--color-main);
+  height: auto;
+
+  main.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-big);
+    height: auto;
+    position: relative;
+
+    section.main-section-task {
+      display: flex;
+      flex-direction: column;
+      gap: var(--padding-big);
+    }
+  }
+}

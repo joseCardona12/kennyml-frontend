@@ -1,0 +1,15 @@
+li.item-nav {
+  display: flex;
+  gap: var(--padding-small);
+
+  &:hover {
+    color: var(--color-blue);
+  }
+
+  span.nav-count {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    padding: 0 calc(var(--padding-small) - 0.6rem);
+  }
+}

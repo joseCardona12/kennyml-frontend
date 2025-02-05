@@ -1,0 +1,18 @@
+header.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  div.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-small);
+
+    span.right-icon {
+      font-size: 1.2rem;
+      color: var(--color-blue);
+      cursor: pointer;
+      z-index: 100;
+    }
+  }
+}

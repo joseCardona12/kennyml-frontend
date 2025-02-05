@@ -1,0 +1,29 @@
+form.content-create-task {
+  position: absolute;
+  z-index: 99;
+  background-color: var(--color-white);
+  width: 100%;
+  padding: var(--padding-big);
+  box-shadow: var(--box-shadow-main);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+
+  div.task-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span.title-icon {
+      color: var(--color-red);
+      font-size: 1.3rem;
+    }
+  }
+
+  div.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+  }
+}

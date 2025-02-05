@@ -1,0 +1,16 @@
+div.group-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-blue-light);
+  border-radius: var(--border-radius-small);
+
+  &:hover {
+    border: 1px solid var(--color-blue);
+  }
+
+  span.input-icon {
+    padding-right: var(--padding-small);
+    color: var(--color-gray);
+  }
+}

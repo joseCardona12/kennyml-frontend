@@ -1,0 +1,11 @@
+li.item-menu {
+  .menu-link {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-small);
+
+    &:hover {
+      color: var(--color-blue);
+    }
+  }
+}

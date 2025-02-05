@@ -1,0 +1,11 @@
+div.content-search-input {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-blue-light);
+
+  span.input-icon {
+    padding-left: var(--padding-small);
+    color: var(--color-gray);
+  }
+}

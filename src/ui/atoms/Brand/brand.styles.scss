@@ -1,0 +1,8 @@
+div.content-brand {
+  h2 {
+    background-color: var(--color-blue-light);
+    border-radius: var(--border-radius-small);
+    padding: calc(var(--padding-small) - 0.6rem);
+    font-weight: bold;
+  }
+}

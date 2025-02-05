@@ -1,21 +1,56 @@
+@import url("../assets/_base.scss");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-blue: #2292f8;
+  --color-blue-hover: #1f82df;
+  --color-blue-light: #f2f5fc;
+  --color-blue-light-two: #e1ecf7;
+  --color-black: #070707;
+  --color-gray: #b5b8bf;
+  --color-gray-light: #e9e8e8;
+  --color-white: #ffff;
+  --color-main: #f8f8f8;
+  --color-red: #ff2e2e;
+  --color-green: #2df17f;
+  --box-shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  /*Spaces */
+  --padding-small: 0.8rem;
+  --padding-medium: 1rem;
+  --padding-big: 1.5rem;
+
+  --margin-small: 0.8rem;
+  /* Border radius */
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-big: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--color-main);
 }
