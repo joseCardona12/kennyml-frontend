@@ -1,4 +1,3 @@
-import { IconUser } from "@/assets/icons";
 import "./groupInput.styles.scss";
 import { Input } from "@/ui/atoms";
 import { ReactElement } from "react";

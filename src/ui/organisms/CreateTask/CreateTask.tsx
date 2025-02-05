@@ -16,7 +16,7 @@ import { ITaskResponse, ITaskResponseError } from "@/app/core/application/dtos";
 import { useRouter } from "next/navigation";
 
 export default function CreateTask(): React.ReactNode {
-  const { showModal, setShowModal } = useModalState((state) => state);
+  const { setShowModal } = useModalState((state) => state);
   const router = useRouter();
   const [formDataTask, setFormDataTask] = useState<ITask>({
     title: "",

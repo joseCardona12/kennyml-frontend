@@ -1,4 +1,3 @@
-import { IconUser } from "@/assets/icons";
 import "./input.styles.scss";
 
 interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {

@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import "./itemNav.styles.scss";
 import { useItemNav } from "@/app/core/application/global-state/itemNav.state";
 

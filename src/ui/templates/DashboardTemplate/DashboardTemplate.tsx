@@ -6,7 +6,7 @@ import { IconButton, Title } from "@/ui/atoms";
 import { Footer, Navbar, SearchInput } from "@/ui/molecules";
 import { CreateTask, DataTask, Header } from "@/ui/organisms";
 import { useModalState } from "@/app/core/application/global-state";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { ITaskResponse, ITaskResponseError } from "@/app/core/application/dtos";
 import { useItemNav } from "@/app/core/application/global-state/itemNav.state";
 
@@ -16,7 +16,7 @@ interface IDashboardTemplateProps {
 export default function DashbaordTemplate({ tasks }: IDashboardTemplateProps) {
   const { showModal, setShowModal } = useModalState((state) => state);
   const { itemNavSelect } = useItemNav((state) => state);
-  const router = useRouter();
+  // const router = useRouter();
 
   const dataTasks = tasks as ITaskResponse;
   const OpenTasks = dataTasks.tasks.filter((task) => task.status_id === "open");
