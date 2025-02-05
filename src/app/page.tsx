@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
-export function FirstView() {
+export default function FirstView() {
   redirect("/home");
 }
