@@ -2,7 +2,7 @@ export class UtilApplication {
   private protocol: string = "http";
   private host: string = "localhost";
   private port: string = "3001";
-  private baseUrl: string = `${this.protocol}://${this.host}:${this.port}/api`;
+  private baseUrl: string = `${this.protocol}://${this.host}${this.port}/api`;
 
   constructor(
     protocolClient?: string,
