@@ -10,11 +10,17 @@ class TaskService implements TaskPort {
   private utilApplication: UtilApplication;
 
   constructor() {
+    // this.utilApplication = new UtilApplication(
+    //   "http",
+    //   "kennyml-backend.onrender.com",
+    //   "",
+    //   "https://kennyml-backend.onrender.com/api"
+    // );
     this.utilApplication = new UtilApplication(
-      "https",
-      "kennyml-backend.onrender.com",
-      "",
-      "https://kennyml-backend.onrender.com/api"
+      "http",
+      "localhost",
+      "3001",
+      "http://localhost:3001/api"
     );
   }
 

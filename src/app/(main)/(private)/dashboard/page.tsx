@@ -1,7 +1,12 @@
-import { TaskService } from "@/app/infrastructure/services";
-import { DashboardTemplate } from "@/ui/templates";
+import { SectionDashboard } from "@/ui/organisms";
+import { DashboardTemplateV2 } from "@/ui/templates";
 
-export default async function DashboardView() {
-  const tasks = await TaskService.getAllTasks();
-  return <DashboardTemplate tasks={tasks} />;
+export default function DashboardView() {
+  return (
+    <DashboardTemplateV2
+      section={<SectionDashboard />}
+      title_section="Dashboard"
+      url_image="/images/avatar_random.jpg"
+    />
+  );
 }

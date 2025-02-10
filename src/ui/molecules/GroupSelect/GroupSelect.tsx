@@ -7,7 +7,7 @@ interface IGroupSelectProps {
   id: string;
   name: string;
   options: ISelect[];
-  value: "open" | "closed",
+  value: "open" | "closed";
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 export default function GroupSelect({

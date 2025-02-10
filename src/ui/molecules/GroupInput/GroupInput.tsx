@@ -12,6 +12,7 @@ interface IGroupInputProps {
   value: string;
   onClick?: () => void;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  border?: string;
 }
 export default function GroupInput({
   error,
@@ -23,21 +24,26 @@ export default function GroupInput({
   onClick,
   onChange,
   value,
+  border,
 }: IGroupInputProps): React.ReactNode {
   return (
-    <div className="group-input">
-      <label htmlFor={name}>{label}</label>
-      <Input
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        value={value}
-        onChange={onChange}
-      />
-      <span className="input-icon" onClick={onClick}>
-        {icon}
-      </span>
-      {error && <span>Error</span>}
+    <div className="group-input" style={{ border }}>
+      <div className="input">
+        <label className="input-label" htmlFor={name}>
+          {label}
+        </label>
+        <Input
+          type={type}
+          placeholder={placeholder}
+          name={name}
+          value={value}
+          onChange={onChange}
+        />
+        <span className="input-icon" onClick={onClick}>
+          {icon}
+        </span>
+      </div>
+      <span className="input-error">{error && <span>{error}</span>}</span>
     </div>
   );
 }

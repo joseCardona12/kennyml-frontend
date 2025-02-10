@@ -5,12 +5,14 @@ interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   placeholder: string;
   name: string;
   value: string;
+  border?: string;
 }
 export default function Input({
   type,
   placeholder,
   name,
   value,
+  border,
   ...props
 }: IInputProps): React.ReactNode {
   return (
@@ -21,6 +23,7 @@ export default function Input({
       name={name}
       value={value}
       {...props}
+      style={{ border }}
     />
   );
 }

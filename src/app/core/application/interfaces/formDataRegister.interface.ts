@@ -1,6 +1,7 @@
 export interface IFormDataRegister {
   name: string;
-  birhtDate: string;
+  lastName: string;
   email: string;
+  cellphone: string;
   password: string;
 }

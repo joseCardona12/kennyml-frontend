@@ -1,0 +1,31 @@
+form.form-verification-code {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-big);
+
+  h2.verification-code-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  div.verification-code-inputs {
+    width: 100%;
+    display: flex;
+    gap: var(--padding-small);
+  }
+
+  p.verification-time {
+    color: var(--color-green);
+    text-align: center;
+  }
+  p.verification-time-click {
+    cursor: pointer;
+  }
+
+  .verification-link {
+    font-size: 0.8rem;
+    color: var(--color-blue);
+  }
+}

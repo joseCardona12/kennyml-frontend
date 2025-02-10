@@ -1,0 +1,26 @@
+div.content-footer-item {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+  span.item-icon {
+    color: var(--color-blue);
+    .icon-link {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--padding-small) - 0.4rem);
+      background-color: var(--color-blue-light);
+      padding: calc(var(--padding-small));
+      border-radius: var(--border-radius-big);
+      color: var(--color-blue);
+    }
+  }
+}
+
+div.content-footer-item.show {
+  opacity: 1;
+  transform: translateY(0);
+
+  span.item-icon {
+    background-color: var(--color-blue-light-hover);
+  }
+}

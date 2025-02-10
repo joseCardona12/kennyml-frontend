@@ -7,6 +7,14 @@ import Title from "./Title/Title";
 import ItemNav from "./ItemNav/ItemNav";
 import Select from "./Select/Select";
 import TextArea from "./TextArea/TextArea";
+import SelectUser from "./SelectUser/SelectUser";
+import TextAreaUser from "./TextAreaUser/TextAreaUser";
+import InputUser from "../InputUser/InputUser";
+import FooterItem from "./FooterItem/FooterItem";
+import ItemCard from "./ItemCard/ItemCard";
+import TitleSecond from "./TitleSecond/TitleSecond";
+import Modal from "./Modal/Modal";
+
 export {
   Input,
   Button,
@@ -17,4 +25,11 @@ export {
   ItemNav,
   Select,
   TextArea,
+  SelectUser,
+  TextAreaUser,
+  InputUser,
+  FooterItem,
+  ItemCard,
+  TitleSecond,
+  Modal,
 };

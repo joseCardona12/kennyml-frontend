@@ -1,4 +1,22 @@
-h2.title {
-  font-weight: bold;
-  font-size: 1.45rem;
+div.content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2.title {
+    font-weight: bold;
+    font-size: 1.45rem;
+    margin-bottom: var(--padding-medium);
+  }
+  div.title-image {
+    border-radius: 50%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-top: -7px;
+
+    .image {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
 }

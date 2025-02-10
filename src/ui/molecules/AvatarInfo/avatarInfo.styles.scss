@@ -1,0 +1,29 @@
+div.content-avatar-info {
+  div.info-first {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-small);
+    h2.info-name {
+      color: var(--color-blue);
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+
+  h5.info-point {
+    color: var(--color-red);
+    display: flex;
+    align-items: center;
+    gap: calc(var(--padding-small) - 0.4rem);
+  }
+
+  p.info-role,
+  p.info-level,
+  p.info-city {
+    font-size: 0.9rem;
+  }
+  p.info-member {
+    font-size: 0.8rem;
+    color: var(--color-black);
+  }
+}

@@ -20,9 +20,17 @@ export default function Header(): React.ReactNode {
 
   const dataMenu: IMenu[] = [
     { icon: <IconHome />, item: "Home", url_item: "/dashboard" },
-    { icon: <IconDashboard />, item: "Resume", url_item: "/resume" },
-    { icon: <IconShopping />, item: "Shopping", url_item: "/shopping" },
-    { icon: <IconSettings />, item: "Settings", url_item: "/settings" },
+    { icon: <IconDashboard />, item: "Resume", url_item: "/dashboard/resume" },
+    {
+      icon: <IconShopping />,
+      item: "Shopping",
+      url_item: "/dashboard/shopping",
+    },
+    {
+      icon: <IconSettings />,
+      item: "Settings",
+      url_item: "/dashboard/settings",
+    },
   ];
 
   const handleClickIcon = (): void => {

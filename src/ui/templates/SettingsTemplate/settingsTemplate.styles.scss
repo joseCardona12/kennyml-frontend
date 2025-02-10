@@ -1,0 +1,14 @@
+div.content-settings {
+  padding: var(--padding-big);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-big);
+
+  main.settings-main {
+    section.main-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--padding-big);
+    }
+  }
+}

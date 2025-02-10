@@ -1,0 +1,19 @@
+footer.content-footerV2 {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-big);
+  background-color: var(--color-white);
+  padding: var(--padding-big);
+  min-height: 100px;
+  width: 100%;
+  border-top-left-radius: var(--border-radius-medium);
+  border-top-right-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-main);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  --webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}

@@ -2,7 +2,7 @@ export class UtilApplication {
   private protocol: string = "http";
   private host: string = "localhost";
   private port: string = "3001";
-  private baseUrl: string = `${this.protocol}://${this.host}${this.port}/api`;
+  private baseUrl: string = `${this.protocol}://${this.host}:${this.port}/api`;
 
   constructor(
     protocolClient?: string,
@@ -29,7 +29,7 @@ export class UtilApplication {
     if (!response.ok) {
       return {
         message: "Opss. There is an Error with response",
-        code: response.status,
+        statusCode: response.status,
       } as T;
     }
     return (await response.json()) as Promise<T>;
@@ -46,6 +46,7 @@ export class UtilApplication {
   }
 
   public async post<T, B>(path: string, body: B): Promise<T> {
+    console.log("data-------",path, body);
     const headers: Record<string, string> = this.getHeaders();
     console.log("headers", `${this.baseUrl}/${path}`);
     const response = await fetch(`${this.baseUrl}/${path}`, {
@@ -53,6 +54,7 @@ export class UtilApplication {
       method: "POST",
       body: JSON.stringify(body),
     });
+    console.log("response", response);
     return await this.managementError(response);
   }
 }
