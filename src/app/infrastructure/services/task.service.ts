@@ -44,4 +44,5 @@ class TaskService implements TaskPort {
   }
 }
 
-export default new TaskService();
+const taskService = new TaskService();
+export default taskService;

@@ -45,4 +45,5 @@ class CodeService {
   }
 }
 
-export default new CodeService();
+const codeService = new CodeService();
+export default codeService;

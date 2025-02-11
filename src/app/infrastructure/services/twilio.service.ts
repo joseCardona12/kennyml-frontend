@@ -25,4 +25,5 @@ class TwilioService {
   }
 }
 
-export default new TwilioService();
+const twilioService = new TwilioService();
+export default twilioService;
