@@ -100,7 +100,16 @@ export default function CreateTask(): React.ReactNode {
     <form className="content-create-task" onSubmit={(e) => handleCreate(e)}>
       <div className="task-title">
         <h2 className="title">Create task</h2>
-        <span className="title-icon" onClick={() => setShowModal(false)}>
+        <span
+          className="title-icon"
+          onClick={() =>
+            setShowModal({
+              state: true,
+              message: "",
+              statusCode: 0,
+            })
+          }
+        >
           <IconClose />
         </span>
       </div>
