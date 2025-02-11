@@ -33,7 +33,11 @@ export default function DashbaordTemplate({ tasks }: IDashboardTemplateProps) {
   ];
 
   const handleClickButton = (): void => {
-    setShowModal(!showModal);
+    setShowModal({
+      state: true,
+      message: "",
+      statusCode: 0,
+    });
     console.log(showModal, "modal");
   };
 
