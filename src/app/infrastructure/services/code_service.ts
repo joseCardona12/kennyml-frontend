@@ -8,10 +8,10 @@ class CodeService {
 
   constructor() {
     this.utilApplication = new UtilApplication(
-      "http",
-      "localhost",
-      "3001",
-      "http://localhost:3001/api"
+      "https",
+      "kennyml-backend.onrender.com",
+      "",
+      "https://kennyml-backend.onrender.com/api"
     );
   }
 

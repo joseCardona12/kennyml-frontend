@@ -10,5 +10,6 @@ export default async function RegisterView() {
       </div>
     );
   }
+  console.log(data);
   return <FormRegisterTempleate data={data} />;
 }

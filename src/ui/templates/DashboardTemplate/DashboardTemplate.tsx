@@ -39,7 +39,7 @@ export default function DashbaordTemplate({ tasks }: IDashboardTemplateProps) {
       statusCode: 0,
     });
     console.log(showModal, "modal");
-  };
+  }
 
   // const handleClickCard = (id: number): void => {
   //   router.push(`dashboard/task/${id}`);

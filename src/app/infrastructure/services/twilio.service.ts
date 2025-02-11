@@ -5,7 +5,12 @@ class TwilioService {
   private utilApplication: UtilApplication;
 
   constructor() {
-    this.utilApplication = new UtilApplication();
+    this.utilApplication = new UtilApplication(
+      "https",
+      "kennyml-backend.onrender.com",
+      "",
+      "https://kennyml-backend.onrender.com/api"
+    );
   }
   public async sendMessageTwilio(
     request: ITwilioRequest
