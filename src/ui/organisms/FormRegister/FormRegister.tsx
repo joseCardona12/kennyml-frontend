@@ -1,6 +1,6 @@
 "use client";
 import "./formRegister.styles.scss";
-import React, { FormEvent, useState } from "react";
+import React, {useState } from "react";
 import { GroupInput } from "@/ui/molecules";
 import {
   IconEmail,
@@ -13,7 +13,6 @@ import { Button, Modal } from "@/ui/atoms";
 import { ICode, IFormDataRegister } from "@/app/core/application/interfaces";
 import { useRouter } from "next/navigation";
 import {
-  AuthService,
   CodeService,
   TwilioService,
 } from "@/app/infrastructure/services";

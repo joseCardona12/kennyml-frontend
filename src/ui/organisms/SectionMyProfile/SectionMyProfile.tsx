@@ -2,7 +2,7 @@
 import { InfoNameUser, ModalAccount } from "@/ui/molecules";
 import "./sectionMyProfile.styles.scss";
 import { IActionUser } from "@/app/core/application/interfaces";
-import { IconArrowRight, IconSpinner } from "@/assets/icons";
+import { IconArrowRight } from "@/assets/icons";
 import { useEffect, useState } from "react";
 import UtilApp from "@/app/core/application/util/utilApplication.util";
 import { ILoginResponse } from "@/app/core/application/dtos";

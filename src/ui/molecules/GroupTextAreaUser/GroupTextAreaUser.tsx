@@ -16,7 +16,6 @@ export default function GroupTextAreaUser({
   name,
   placeholder,
   value,
-  border,
   onChange,
 }: IGroupTextAreaProps): React.ReactNode {
   return (

@@ -1,6 +1,5 @@
 "use client";
 import {
-  useModalEditState,
   useModalState,
 } from "@/app/core/application/global-state";
 import "./sectionEdit.styles.scss";
@@ -10,7 +9,7 @@ import { IconErrorMessage } from "@/assets/icons";
 
 interface ISectionEditProps {
   name: string;
-  placeholder: string;
+  placeholder: string
   type: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;

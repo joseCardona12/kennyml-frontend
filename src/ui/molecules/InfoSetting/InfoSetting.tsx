@@ -3,8 +3,6 @@ import { ItemCard } from "@/ui/atoms";
 import {
   IconArrowRight,
   IconDocument,
-  IconEmail,
-  IconHome,
   IconUser,
 } from "@/assets/icons";
 import { IInfoSettingData } from "@/app/core/application/interfaces";

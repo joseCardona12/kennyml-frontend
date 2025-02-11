@@ -2,7 +2,6 @@
 import Image from "next/image";
 import "./title.styles.scss";
 import { useRouter } from "next/navigation";
-import { IConArrowLeft } from "@/assets/icons";
 import { ReactElement, useState } from "react";
 
 interface ITitleProps {

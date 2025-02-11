@@ -1,4 +1,4 @@
-import { SectionAboutMe, SectionEditEmail } from "@/ui/organisms";
+import { SectionAboutMe } from "@/ui/organisms";
 import { DashboardTemplateV2 } from "@/ui/templates";
 
 export default function AboutMeView() {

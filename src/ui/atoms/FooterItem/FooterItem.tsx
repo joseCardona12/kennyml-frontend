@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "./footerItem.styles.scss";
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 
 interface IFooterItemProps {
   icon: ReactElement;

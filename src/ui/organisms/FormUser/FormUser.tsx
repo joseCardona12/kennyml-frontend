@@ -7,10 +7,10 @@ import GroupInpuUser from "@/ui/molecules/GroupInputUser/GroupInputUser";
 import { IconEye, IconUpdate } from "@/assets/icons";
 
 export default function FormUser(): React.ReactNode {
-  const dataSelectTypeDocument: ISelect[] = [
-    { value: "ti", text: "TI" },
-    { value: "cc", text: "CC" },
-  ];
+  // const dataSelectTypeDocument: ISelect[] = [
+  //   { value: "ti", text: "TI" },
+  //   { value: "cc", text: "CC" },
+  // ];
   return (
     <div className="content-form-user">
       <Title text="Your data" />

@@ -25,4 +25,5 @@ export {
   ILoginRequest,
   ILoginResponse,
   ILoginResponseError,
+  ICodeResponse,
 };

@@ -2,7 +2,6 @@
 
 import {
   useModalEditState,
-  useModalState,
 } from "@/app/core/application/global-state";
 import "./sectionProduct.styles.scss";
 import { IDataCardP } from "@/app/core/application/interfaces";
