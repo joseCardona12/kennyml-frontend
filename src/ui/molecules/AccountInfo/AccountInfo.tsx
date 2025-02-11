@@ -47,9 +47,9 @@ export default function AccountInfo(): React.ReactNode {
   };
 
   useEffect(() => {
-    const cookies = UtilApp.getCookies("user-credentials-login");
+    const cookies = UtilApp.getCookies("user-credentials");
     if (!cookies) {
-      console.error("No found the cookie 'user-credentials-login'");
+      console.error("No found the cookie 'user-credentials'");
       return;
     }
 

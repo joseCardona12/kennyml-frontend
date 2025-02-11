@@ -71,7 +71,7 @@ export default function FormVerificationCode(): React.ReactNode {
       statusCode: data.statusCode,
     });
     UtilApp.removeCookies("code-user");
-    UtilApp.saveCookie("user-credentials-register", JSON.stringify(dataUser));
+    UtilApp.saveCookie("user-credentials", JSON.stringify(dataUser));
     router.push("/dashboard");
   };
 

@@ -49,7 +49,7 @@ export default function FormLogin(): React.ReactNode {
       statusCode: data.statusCode,
     });
     UtilApp.saveCookie(
-      "user-credentials-login",
+      "user-credentials",
       JSON.stringify(dataResponseSuccess)
     );
     router.push("/dashboard");
