@@ -110,6 +110,7 @@ export default function FormVerificationCode(): React.ReactNode {
       return;
     }
     setCodeCookie(cookieValue);
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>

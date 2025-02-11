@@ -2,7 +2,6 @@
 import { Button, Title } from "@/ui/atoms";
 import { GroupTextAreaUser } from "@/ui/molecules";
 import "./formUser.styles.scss";
-import { ISelect } from "@/app/core/application/interfaces";
 import GroupInpuUser from "@/ui/molecules/GroupInputUser/GroupInputUser";
 import { IconEye, IconUpdate } from "@/assets/icons";
 
