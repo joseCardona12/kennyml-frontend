@@ -1,0 +1,11 @@
+div.section-account {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+
+  div.account-cards {
+    display: flex;
+    gap: var(--padding-small);
+    width: 100%;
+  }
+}

@@ -4,6 +4,8 @@ import { useStatusState } from "./status.state";
 import { ItemNav } from "@/ui/atoms";
 import { useFooterItemState } from "./footerItem.state";
 import { useCodeState } from "./code.state";
+import { useModalAccountState } from "./modal-account.state";
+import { useModalEditState } from "./modalEdit.state";
 
 export {
   useMenuState,
@@ -12,4 +14,6 @@ export {
   ItemNav,
   useFooterItemState,
   useCodeState,
+  useModalAccountState,
+  useModalEditState,
 };

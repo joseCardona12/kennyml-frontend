@@ -19,8 +19,12 @@ import { FaBookOpenReader as IconBook } from "react-icons/fa6";
 import { FaMoneyBillWave as IconBill } from "react-icons/fa6";
 import { AiFillProduct as IconProduct } from "react-icons/ai";
 import { IoIosArrowForward as IconArrowRight } from "react-icons/io";
+import { IoIosArrowBack as IConArrowLeft } from "react-icons/io";
 import { IoDocumentText as IconDocument } from "react-icons/io5";
 import { FaPhone as IconPhone } from "react-icons/fa";
+import { FaCheck as IconCheckWithoutBack } from "react-icons/fa";
+import { FiCommand as IconSpinner } from "react-icons/fi";
+import { BiSolidMessageSquareError as IconErrorMessage } from "react-icons/bi";
 
 export {
   IconLock,
@@ -46,4 +50,8 @@ export {
   IconArrowRight,
   IconDocument,
   IconPhone,
+  IconCheckWithoutBack,
+  IconSpinner,
+  IConArrowLeft,
+  IconErrorMessage,
 };

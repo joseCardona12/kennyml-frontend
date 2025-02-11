@@ -1,0 +1,22 @@
+div.content-cardP {
+  padding: var(--padding-small);
+  border-radius: var(--border-radius-small);
+
+  &:hover {
+    box-shadow: var(--box-shadow-main);
+  }
+
+  div.cardP-title {
+    display: flex;
+    justify-content: space-between;
+    h5.title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  p.cardP-place {
+    width: fit-content;
+    border-radius: var(--border-radius-small);
+  }
+}

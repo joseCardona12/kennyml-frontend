@@ -1,0 +1,10 @@
+button.button-account {
+  padding: var(--padding-small);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-gray-light);
+  transition: background-color 0.4s ease;
+}
+
+button.button-account:hover {
+  background-color: var(--color-gray);
+}

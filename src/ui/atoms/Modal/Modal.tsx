@@ -7,8 +7,13 @@ import { useModalState } from "@/app/core/application/global-state";
 interface IModalProps {
   icon?: ReactElement;
   text: string;
+  statusCode?: number;
 }
-export default function Modal({ icon, text }: IModalProps): React.ReactNode {
+export default function Modal({
+  icon,
+  text,
+  statusCode,
+}: IModalProps): React.ReactNode {
   const { setShowModal } = useModalState((state) => state);
 
   const handleClose = (): void => {
@@ -25,6 +30,7 @@ export default function Modal({ icon, text }: IModalProps): React.ReactNode {
           <IconClose />
         </span>
         <span className="modal-icon">{icon}</span>
+        <h4 className="modal-status">Error: {statusCode}</h4>
         <p className="modal-information">{text}</p>
       </div>
     </div>

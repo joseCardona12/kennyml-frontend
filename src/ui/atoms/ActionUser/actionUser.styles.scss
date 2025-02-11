@@ -1,0 +1,28 @@
+div.content-action-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-small) 0;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-blue);
+  }
+
+  div.user-info {
+    p.info-paragraph {
+      color: var(--color-gray-dark);
+      font-size: 0.8rem;
+    }
+  }
+
+  div.user-data {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-small);
+    p.data {
+      color: var(--color-gray-dark);
+      font-size: 0.8rem;
+    }
+  }
+}

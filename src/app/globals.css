@@ -9,15 +9,16 @@
   --color-blue-light-hover: #e0e7f8;
   --color-blue-light-two: #e8eff7;
   --color-black: #070707;
+  --color-gray-dark: #5e5e5e;
   --color-gray: #b5b8bf;
-  --color-gray-light: #e9e8e8;
+  --color-gray-light: #f1f1f1;
   --color-white: #ffff;
-  --color-main: #F3F4F6;
+  --color-main: #f3f4f6;
   --color-red: #ff2e2e;
   --color-yellow: #f7d74d;
   --color-yellow-light: #faf6e2;
   --color-red-light: #fae2e2;
-  --color-green: #2df17f;
+  --color-green: #2de078;
   --color-green-light: #e8fcf0;
   --box-shadow-main: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;

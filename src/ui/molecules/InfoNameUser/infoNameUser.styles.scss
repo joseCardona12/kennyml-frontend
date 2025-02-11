@@ -1,0 +1,10 @@
+div.content-info-name-user {
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-small);
+  padding: var(--padding-small);
+
+  div.user-action {
+    bottom: var(--color-gray-light);
+  }
+}

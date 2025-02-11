@@ -2,10 +2,20 @@ div.content-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h2.title {
-    font-weight: bold;
-    font-size: 1.45rem;
+
+  div.title-c {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-medium);
     margin-bottom: var(--padding-medium);
+
+    span.c-icon{
+      cursor: pointer;
+    }
+    h2.title {
+      font-weight: bold;
+      font-size: 1.45rem;
+    }
   }
   div.title-image {
     border-radius: 50%;
@@ -13,10 +23,22 @@ div.content-title {
     width: 20px;
     height: 20px;
     margin-top: -7px;
+    position: relative;
 
     .image {
       border-radius: 50%;
       width: 100%;
+    }
+
+    div.image-text {
+      background-color: var(--color-white);
+      position: absolute;
+      left: -60;
+      bottom: -40;
+      padding: calc(var(--padding-small) - 0.4rem);
+      border-radius: var(--border-radius-small);
+      z-index: 2;
+      box-shadow: var(--box-shadow-main);
     }
   }
 }

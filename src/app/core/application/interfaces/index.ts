@@ -10,6 +10,8 @@ import type { ICode } from "./code.interface";
 import type { IVerificationForm } from "./verificationForm.interface";
 import type { IUser } from "./user.interface";
 import type { IDataCookie } from "./dataCookie.interface";
+import type { IActionUser } from "./actionUser.interface";
+import type { IDataCardP } from "./dataCardP.interface";
 
 export {
   IFormDataLogin,
@@ -24,4 +26,6 @@ export {
   IVerificationForm,
   IUser,
   IDataCookie,
+  IActionUser,
+  IDataCardP,
 };

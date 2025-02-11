@@ -1,0 +1,7 @@
+div.content-my-profile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+  min-height: 1150px;
+  position: relative;
+}

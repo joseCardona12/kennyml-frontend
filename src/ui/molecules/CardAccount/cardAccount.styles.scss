@@ -1,0 +1,36 @@
+div.content-card-account {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-small);
+  padding: var(--padding-small);
+  width: 100%;
+  transition: box-shadow 0.4s ease;
+
+  span.account-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+
+  h4.account-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 90%;
+  }
+
+  p.account-paragraph {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  &:hover {
+    box-shadow: var(--box-shadow-main);
+  }
+}

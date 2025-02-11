@@ -16,6 +16,12 @@ import GroupTextAreaUser from "./GroupTextAreaUser/GroupTextAreaUser";
 import FooterV2 from "./FooterV2/FooterV2";
 import InfoSetting from "./InfoSetting/InfoSetting";
 import UseCash from "./UseCash/UseCash";
+import AccountInfo from "./AccountInfo/AccountInfo";
+import CardAccount from "./CardAccount/CardAccount";
+import InfoNameUser from "./InfoNameUser/InfoNameUser";
+import ModalAccount from "./ModalAccount/ModalAccount";
+import ModalFormCreate from "./ModalFormCreate/ModalFormCreate";
+import GroupInputProduct from "./GroupInputProduct/GroupInputProduct";
 
 export {
   GroupInput,
@@ -36,4 +42,10 @@ export {
   FooterV2,
   InfoSetting,
   UseCash,
+  AccountInfo,
+  CardAccount,
+  InfoNameUser,
+  ModalAccount,
+  ModalFormCreate,
+  GroupInputProduct,
 };
