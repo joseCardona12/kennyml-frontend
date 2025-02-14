@@ -1,6 +1,12 @@
+"use client";
+import { Button } from "@/ui/atoms";
 import "./cardP.styles.scss";
+import { IconEye, IconTrash, IconUpdate } from "@/assets/icons";
+import { useRouter } from "next/navigation";
+import { useModalDeleteState } from "@/app/core/application/global-state";
 
 interface ICardPProps {
+  id?: string;
   title: string;
   description: string;
   quantity: string;
@@ -11,6 +17,7 @@ interface ICardPProps {
   date_creation?: string;
 }
 export default function CardP({
+  id,
   title,
   description,
   quantity,
@@ -20,6 +27,18 @@ export default function CardP({
   backgrounColorPlace,
   date_creation,
 }: ICardPProps): React.ReactNode {
+  const router = useRouter();
+  const { modal, setModal } = useModalDeleteState((state) => state);
+
+  const handleUpdateProduct = (): void => {};
+
+  const handleDeleteProduct = (): void => {
+    setModal({
+      id: id!.toString(),
+      status: true,
+    });
+  };
+
   return (
     <div className="content-cardP" style={{ backgroundColor }}>
       <div className="cardP-title">
@@ -32,12 +51,37 @@ export default function CardP({
       <p className="cardP-description"> {description}</p>
       <p className="cardP-quantity">Quantity: {quantity}</p>
       <p className="cardP-unit">Unit: {unit}</p>
-      <p
-        className="cardP-place"
-        style={{ backgroundColor: backgrounColorPlace }}
-      >
-        {place}
-      </p>
+      <div className="cardP-unit-group">
+        <p
+          className="cardP-place"
+          style={{ backgroundColor: backgrounColorPlace }}
+        >
+          {place}
+        </p>
+        <div className="cardP-unit-group-buttons">
+          <Button
+            text={<IconUpdate />}
+            type="button"
+            backgroundColor="var(--color-green)"
+            onClick={handleUpdateProduct}
+            textHover="Update product"
+          />
+          <Button
+            text={<IconEye />}
+            type="button"
+            backgroundColor="var(--color-blue)"
+            onClick={() => router.push(`/dashboard/product/${id}`)}
+            textHover="Show specific product"
+          />
+          <Button
+            text={<IconTrash />}
+            type="button"
+            backgroundColor="var(--color-red)"
+            textHover="Delete product"
+            onClick={handleDeleteProduct}
+          />
+        </div>
+      </div>
     </div>
   );
 }

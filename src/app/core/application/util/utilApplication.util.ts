@@ -14,10 +14,10 @@ class UtilApp {
     setCookie(key, value);
   }
 
-  public static getCookies(key: string): string {
+  public static getCookies(key: string): {} {
     const cookie = getCookie(key);
     if (!cookie) return "Erro to get cookie";
-    return cookie;
+    return JSON.parse(cookie);
   }
 
   public static removeCookies(key: string): void {

@@ -9,18 +9,20 @@ interface IGroupSelectProps {
   options: ISelect[];
   value: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  width:string,
+  width: string;
 }
 export default function GroupSelectUser({
   id,
+  label,
   name,
   options,
   value,
   onChange,
-  width = "20%"
+  width = "20%",
 }: IGroupSelectProps): React.ReactNode {
   return (
-    <div className="content-selectUser" style={{width}}>
+    <div className="content-selectUser" style={{ width }}>
+      {label && <label>{label}</label>}
       <SelectUser
         id={id}
         name={name}

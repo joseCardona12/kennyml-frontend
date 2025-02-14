@@ -22,6 +22,7 @@ import InfoNameUser from "./InfoNameUser/InfoNameUser";
 import ModalAccount from "./ModalAccount/ModalAccount";
 import ModalFormCreate from "./ModalFormCreate/ModalFormCreate";
 import GroupInputProduct from "./GroupInputProduct/GroupInputProduct";
+import ModalDelete from "./ModalDelete/ModalDelete";
 
 export {
   GroupInput,
@@ -48,4 +49,5 @@ export {
   ModalAccount,
   ModalFormCreate,
   GroupInputProduct,
+  ModalDelete,
 };

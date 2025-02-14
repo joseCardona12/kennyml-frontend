@@ -6,6 +6,8 @@ import { useFooterItemState } from "./footerItem.state";
 import { useCodeState } from "./code.state";
 import { useModalAccountState } from "./modal-account.state";
 import { useModalEditState } from "./modalEdit.state";
+import { useModalCreateProduct } from "./modal-create-product.state";
+import { useModalDeleteState } from "./modal-delete.state";
 
 export {
   useMenuState,
@@ -16,4 +18,6 @@ export {
   useCodeState,
   useModalAccountState,
   useModalEditState,
+  useModalCreateProduct,
+  useModalDeleteState,
 };

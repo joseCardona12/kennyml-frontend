@@ -11,6 +11,8 @@ import type { IRegisterResponseError } from "./auth/register.responseError.dto";
 import type { ILoginRequest } from "./auth/login.request.dto";
 import type { ILoginResponse } from "./auth/login.response.dto";
 import type { ILoginResponseError } from "./auth/login.responseErro.dto";
+import type { IResponse } from "./response.dto";
+import type { IResponseError } from "./responseError.dto";
 
 export {
   ITaskResponse,
@@ -26,4 +28,6 @@ export {
   ILoginResponse,
   ILoginResponseError,
   ICodeResponse,
+  IResponse,
+  IResponseError,
 };

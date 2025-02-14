@@ -19,4 +19,16 @@ div.content-cardP {
     width: fit-content;
     border-radius: var(--border-radius-small);
   }
+
+  div.cardP-unit-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div.cardP-unit-group-buttons{
+      display: flex;
+      align-items: center;
+      gap: var(--padding-small);
+    }
+  }
 }

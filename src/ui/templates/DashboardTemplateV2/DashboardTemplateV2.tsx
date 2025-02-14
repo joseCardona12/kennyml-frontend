@@ -8,6 +8,7 @@ import {
   IconProduct,
   IconSettings,
   IconShopping,
+  IconUser,
 } from "@/assets/icons";
 import { Title } from "@/ui/atoms";
 import { FooterV2 } from "@/ui/molecules";
@@ -33,7 +34,7 @@ export default function DashboardTemplateV2({
     { name: "Shopping", icon: <IconShopping />, url: "/dashboard/shopping" },
     { name: "Bills", icon: <IconBill />, url: "/dashboard/bill" },
     { name: "Books", icon: <IconBook />, url: "/dashboard/book" },
-    { name: "Settings", icon: <IconSettings />, url: "/dashboard/setting" },
+    { name: "Account", icon: <IconUser />, url: "/dashboard/account" },
   ];
   return (
     <div className="content-dashboard-templatev2">

@@ -46,13 +46,25 @@ export class UtilApplication {
   }
 
   public async post<T, B>(path: string, body: B): Promise<T> {
-    console.log("data-------",path, body);
+    console.log("data-------", path, body);
     const headers: Record<string, string> = this.getHeaders();
     console.log("headers", `${this.baseUrl}/${path}`);
     const response = await fetch(`${this.baseUrl}/${path}`, {
       headers,
       method: "POST",
       body: JSON.stringify(body),
+    });
+    console.log("response", response);
+    return await this.managementError(response);
+  }
+
+  public async delete<T>(path: string): Promise<T> {
+    console.log("data-------", path);
+    const headers: Record<string, string> = this.getHeaders();
+    console.log("headers", `${this.baseUrl}/${path}`);
+    const response = await fetch(`${this.baseUrl}/${path}`, {
+      headers,
+      method: "DELETE",
     });
     console.log("response", response);
     return await this.managementError(response);

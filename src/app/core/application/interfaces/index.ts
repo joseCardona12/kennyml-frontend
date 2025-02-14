@@ -12,6 +12,10 @@ import type { IUser } from "./user.interface";
 import type { IDataCookie } from "./dataCookie.interface";
 import type { IActionUser } from "./actionUser.interface";
 import type { IDataCardP } from "./dataCardP.interface";
+import type { IProduct } from "./product.interface";
+import type { IPlace } from "./place.interface";
+import type { IStatus } from "./status.interface";
+import type { IUnit } from "./unit.interface";
 
 export {
   IFormDataLogin,
@@ -28,4 +32,8 @@ export {
   IDataCookie,
   IActionUser,
   IDataCardP,
+  IProduct,
+  IPlace,
+  IStatus,
+  IUnit,
 };

@@ -1,73 +1,62 @@
 "use client";
 
-import {
-  useModalEditState,
-} from "@/app/core/application/global-state";
+import { useModalDeleteState, useModalEditState } from "@/app/core/application/global-state";
 import "./sectionProduct.styles.scss";
-import { IDataCardP } from "@/app/core/application/interfaces";
+import {
+  IDataCardP,
+  IPlace,
+  IProduct,
+  IStatus,
+  IUnit,
+} from "@/app/core/application/interfaces";
 import { Button } from "@/ui/atoms";
-import { ModalFormCreate } from "@/ui/molecules";
+import { ModalDelete, ModalFormCreate } from "@/ui/molecules";
 import CardP from "@/ui/molecules/CardP/CardP";
+import { IconPlus } from "@/assets/icons";
 
-export default function SectionProduct(): React.ReactNode {
+interface ISectionProductProps {
+  products: IProduct[];
+  places: IPlace[];
+  units: IUnit[];
+  status: IStatus[];
+}
+export default function SectionProduct({
+  products,
+  places,
+  units,
+  status,
+}: ISectionProductProps): React.ReactNode {
   const { showModal, setShowModal } = useModalEditState((state) => state);
-
-  const dataCards: IDataCardP[] = [
-    {
-      title: "Rice",
-      description: "Rice is",
-      place: "D1",
-      quantity: "23",
-      unit: "Package",
-      backgroundColor: "var(--color-white)",
-      data_creation: "11/02/2025",
-      backgroundColorPlace: "var(--color-red-light)",
-    },
-    {
-      title: "Rice",
-      description: "Rice is",
-      place: "D1",
-      quantity: "23",
-      unit: "Package",
-      backgroundColor: "var(--color-white)",
-      data_creation: "11/02/2025",
-      backgroundColorPlace: "var(--color-green-light)",
-    },
-    {
-      title: "Rice",
-      description: "Rice is",
-      place: "SUPERMARKET",
-      quantity: "23",
-      unit: "Package",
-      backgroundColor: "var(--color-white)",
-      data_creation: "11/02/2025",
-      backgroundColorPlace: "var(--color-yellow-light)",
-    },
-  ];
+  const {modal} = useModalDeleteState((state)=>state);
 
   const handleClick = (): void => {
     setShowModal(!showModal);
   };
   return (
     <div className="content-section-product">
-      {/* <ModalFormCreate /> */}
       <div className="product-button" onClick={handleClick}>
-        <Button text="+" type="button" />
+        <Button text={<IconPlus />} type="button" width="100%" />
       </div>
-      {dataCards.map((card: IDataCardP, index: number) => (
+      {products.map((card: IProduct, index: number) => (
         <CardP
+          id={card.id}
           title={card.title}
           description={card.description}
-          quantity={card.quantity}
-          place={card.place}
-          unit={card.unit}
-          backgroundColor={card.backgroundColor}
-          date_creation={card.data_creation}
-          backgrounColorPlace={card.backgroundColorPlace}
+          quantity={card.quantity.toString()}
+          place={card.place_id == "1" ? "D1" : "SUPERMARKET"}
+          unit={card.unit_id == "1" ? "package" : "box"}
+          backgroundColor={"var(--color-white)"}
+          date_creation={card.start_date}
+          backgrounColorPlace={"var(--color-red-light)"}
           key={index}
         />
       ))}
-      {showModal && <ModalFormCreate />}
+      {showModal && (
+        <ModalFormCreate places={places} units={units} status={status} />
+      )}
+      {modal.status && (
+        <ModalDelete />
+      )}
     </div>
   );
 }

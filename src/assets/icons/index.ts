@@ -25,6 +25,7 @@ import { FaPhone as IconPhone } from "react-icons/fa";
 import { FaCheck as IconCheckWithoutBack } from "react-icons/fa";
 import { FiCommand as IconSpinner } from "react-icons/fi";
 import { BiSolidMessageSquareError as IconErrorMessage } from "react-icons/bi";
+import { FaTrash as IconTrash } from "react-icons/fa";
 
 export {
   IconLock,
@@ -54,4 +55,5 @@ export {
   IconSpinner,
   IConArrowLeft,
   IconErrorMessage,
+  IconTrash,
 };
