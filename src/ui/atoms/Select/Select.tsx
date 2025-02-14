@@ -24,8 +24,8 @@ export default function Select({
       onChange={onChange}
     >
       {options.map((option: ISelect, index: number) => (
-        <option value={option.value} key={index}>
-          {option.text}
+        <option value={option.name} key={index}>
+          {option.name}
         </option>
       ))}
     </select>
