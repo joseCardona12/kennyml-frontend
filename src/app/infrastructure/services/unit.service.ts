@@ -1,6 +1,6 @@
 import { IResponse, IResponseError } from "@/app/core/application/dtos";
 import { UtilApplication } from "../utils";
-import { IPlace, IUnit } from "@/app/core/application/interfaces";
+import { IUnit } from "@/app/core/application/interfaces";
 
 class UnitService {
   private httpClient: UtilApplication;

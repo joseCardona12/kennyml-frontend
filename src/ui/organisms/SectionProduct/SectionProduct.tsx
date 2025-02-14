@@ -3,7 +3,6 @@
 import { useModalDeleteState, useModalEditState } from "@/app/core/application/global-state";
 import "./sectionProduct.styles.scss";
 import {
-  IDataCardP,
   IPlace,
   IProduct,
   IStatus,

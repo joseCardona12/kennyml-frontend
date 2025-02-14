@@ -2,14 +2,13 @@
 import {
   IPlace,
   IProduct,
-  ISelect,
   IStatus,
   IUnit,
 } from "@/app/core/application/interfaces";
 import { GroupInputProduct, GroupSelectUser } from "..";
 import "./modalFormCreate.styles.scss";
 
-import { Button, InputUser, Modal } from "@/ui/atoms";
+import { Button, Modal } from "@/ui/atoms";
 import {
   useModalCreateProduct,
   useModalEditState,

@@ -1,5 +1,5 @@
 "use client";
-import { Button, Input, InputUser, Modal } from "@/ui/atoms";
+import { Button, InputUser } from "@/ui/atoms";
 import "./modalDelete.styles.scss";
 import { IconErrorMessage } from "@/assets/icons";
 import { useState } from "react";

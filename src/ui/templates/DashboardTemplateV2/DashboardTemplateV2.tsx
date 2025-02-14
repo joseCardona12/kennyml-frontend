@@ -6,7 +6,6 @@ import {
   IconBook,
   IconDashboard,
   IconProduct,
-  IconSettings,
   IconShopping,
   IconUser,
 } from "@/assets/icons";

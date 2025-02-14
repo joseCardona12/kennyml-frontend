@@ -28,7 +28,7 @@ export default function CardP({
   date_creation,
 }: ICardPProps): React.ReactNode {
   const router = useRouter();
-  const { modal, setModal } = useModalDeleteState((state) => state);
+  const { setModal } = useModalDeleteState((state) => state);
 
   const handleUpdateProduct = (): void => {};
 

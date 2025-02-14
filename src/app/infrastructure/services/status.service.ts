@@ -1,6 +1,6 @@
 import { IResponse, IResponseError } from "@/app/core/application/dtos";
 import { UtilApplication } from "../utils";
-import { IPlace, IStatus } from "@/app/core/application/interfaces";
+import { IStatus } from "@/app/core/application/interfaces";
 
 class StatusService {
   private httpClient: UtilApplication;
