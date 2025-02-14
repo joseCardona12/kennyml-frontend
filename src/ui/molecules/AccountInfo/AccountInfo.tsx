@@ -3,10 +3,12 @@ import { AvatarV2 } from "@/ui/atoms";
 import "./accountInfo.styles.scss";
 import { useEffect, useState } from "react";
 import UtilApp from "@/app/core/application/util/utilApplication.util";
-import { IRegisterResponse } from "@/app/core/application/dtos";
+import { ILoginResponse, IRegisterResponse } from "@/app/core/application/dtos";
 
 export default function AccountInfo(): React.ReactNode {
-  const [userCookie, setUserCookie] = useState<IRegisterResponse>({
+  const [userCookie, setUserCookie] = useState<
+    ILoginResponse | IRegisterResponse
+  >({
     message: "",
     statusCode: 0,
     token: "",
@@ -48,17 +50,12 @@ export default function AccountInfo(): React.ReactNode {
 
   useEffect(() => {
     const cookies = UtilApp.getCookies("user-credentials");
+    console.log("cookies,", cookies);
     if (!cookies) {
       console.error("No found the cookie 'user-credentials'");
       return;
     }
-
-    try {
-      const parsedCookies = JSON.parse(cookies);
-      setUserCookie(parsedCookies);
-    } catch (error) {
-      console.error("Error al parsear la cookie:", error);
-    }
+    setUserCookie(cookies);
   }, []);
   return (
     <div className="content-account-info">
@@ -73,7 +70,7 @@ export default function AccountInfo(): React.ReactNode {
           <h4 className="user-name-random">
             NickName
             {user.code_verification_id
-              ? user.code_verification_id + user.id + user.role_id
+              ? `${user.code_verification_id}${user.id}${user.role_id}`
               : "1234567890"}
           </h4>
           <p className="user-account">

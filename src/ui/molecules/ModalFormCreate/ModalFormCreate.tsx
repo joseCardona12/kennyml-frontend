@@ -40,8 +40,8 @@ export default function ModalFormCreate({
     title: "",
     description: "",
     quantity: 0,
-    start_date: "",
-    end_date: "",
+    start_date: new Date().toLocaleString(),
+    end_date: new Date().toLocaleString(),
     place_id: "D1",
     status_id: "open",
     unit_id: "package",
@@ -136,22 +136,6 @@ export default function ModalFormCreate({
               type="number"
               value={formDataCreate.quantity.toString()}
             />
-            <GroupInputProduct
-              label="Start date"
-              name="start_date"
-              onChange={handleChange}
-              placeholder="Enter start date"
-              type="date"
-              value={formDataCreate.start_date}
-            />
-            <GroupInputProduct
-              label="End date"
-              name="end_date"
-              onChange={handleChange}
-              placeholder="Enter end date"
-              type="date"
-              value={formDataCreate.end_date}
-            />
             <GroupSelectUser
               id="unit"
               label="Units"
@@ -159,15 +143,6 @@ export default function ModalFormCreate({
               onChange={handleChange}
               options={units}
               value={formDataCreate.unit_id}
-              width="100%"
-            />
-            <GroupSelectUser
-              id="status"
-              label="Status"
-              name="status_id"
-              onChange={handleChange}
-              options={status}
-              value={formDataCreate.status_id}
               width="100%"
             />
             <GroupSelectUser

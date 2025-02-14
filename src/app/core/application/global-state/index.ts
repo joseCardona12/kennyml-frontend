@@ -8,6 +8,7 @@ import { useModalAccountState } from "./modal-account.state";
 import { useModalEditState } from "./modalEdit.state";
 import { useModalCreateProduct } from "./modal-create-product.state";
 import { useModalDeleteState } from "./modal-delete.state";
+import { useErrorState } from "./error.state";
 
 export {
   useMenuState,
@@ -20,4 +21,5 @@ export {
   useModalEditState,
   useModalCreateProduct,
   useModalDeleteState,
+  useErrorState,
 };

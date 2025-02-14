@@ -16,6 +16,7 @@ import type { IProduct } from "./product.interface";
 import type { IPlace } from "./place.interface";
 import type { IStatus } from "./status.interface";
 import type { IUnit } from "./unit.interface";
+import type { IRouter, IRouterState } from "./route.interface";
 
 export {
   IFormDataLogin,
@@ -36,4 +37,6 @@ export {
   IPlace,
   IStatus,
   IUnit,
+  IRouter,
+  IRouterState,
 };

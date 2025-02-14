@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 import "@/assets/_base.scss";
+import PrivateRoute from "./privateRoute";
+import { LoadingWrapper } from "@/ui/atoms";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <LoadingWrapper>
+          <PrivateRoute>{children}</PrivateRoute>
+        </LoadingWrapper>
       </body>
     </html>
   );

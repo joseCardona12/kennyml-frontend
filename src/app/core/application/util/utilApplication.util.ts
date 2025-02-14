@@ -16,7 +16,7 @@ class UtilApp {
 
   public static getCookies(key: string) {
     const cookie = getCookie(key);
-    if (!cookie) return "Erro to get cookie";
+    if (!cookie) return;
     return JSON.parse(cookie);
   }
 

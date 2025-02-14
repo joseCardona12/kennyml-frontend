@@ -18,6 +18,7 @@ import AvatarV2 from "./AvatarV2/AvatarV2";
 import ButtonAccount from "./ButtonAccount/ButtonAccount";
 import ActionUser from "./ActionUser/ActionUser";
 import InputProductUser from "./InputProduct/InputProduct";
+import LoadingWrapper from "./LoadingWrapper/LoadingWrapper";
 
 export {
   Input,
@@ -40,4 +41,5 @@ export {
   ButtonAccount,
   ActionUser,
   InputProductUser,
+  LoadingWrapper,
 };

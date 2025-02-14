@@ -1,0 +1,36 @@
+import { IRouter } from "./core/application/interfaces";
+
+export const routes: IRouter = {
+  public: [
+    { path: "/login" },
+    { path: "/register" },
+    { path: "/verification-code" },
+    { path: "/error-credentials" },
+    { path: "/in-progress" },
+  ],
+  private: [
+    { path: "/dashboard" },
+    { path: "/dashboard/account" },
+    { path: "/dashboard/account/my-profile" },
+    { path: "/dashboard/account/my-profile/aboutme-edit" },
+    { path: "/dashboard/account/my-profile/cellphone-edit" },
+    { path: "/dashboard/account/my-profile/cityid-edit" },
+    { path: "/dashboard/account/my-profile/documentid-edit" },
+    { path: "/dashboard/account/my-profile/documentnumber-edit" },
+    { path: "/dashboard/account/my-profile/email-edit" },
+    { path: "/dashboard/account/my-profile/image-edit" },
+    { path: "/dashboard/account/my-profile/levelid-edit" },
+    { path: "/dashboard/account/my-profile/password-edit" },
+    { path: "/dashboard/account/my-profile/roleid-edit" },
+    { path: "/dashboard/account/security-center" },
+    { path: "/dashboard/account/security-center/change-password" },
+    { path: "/dashboard/bill" },
+    { path: "/dashboard/book" },
+    { path: "/dashboard/product" },
+    { path: "/dashboard/product/[id]" },
+    { path: "/dashboard/setting" },
+    { path: "/dashboard/setting/about_me" },
+    { path: "/dashboard/setting/email" },
+    { path: "/dashboard/shopping" },
+  ],
+};
