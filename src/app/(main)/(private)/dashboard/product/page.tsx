@@ -21,6 +21,11 @@ export default async function ProductView() {
     const units = await UnitService.getAllUnits();
     const status = await StatusService.getAllStatus();
 
+    console.log("products", products);
+    console.log("places", places);
+    console.log("units", units);
+    console.log("status", status);
+
     if (
       products.statusCode >= 400 ||
       places.statusCode >= 400 ||

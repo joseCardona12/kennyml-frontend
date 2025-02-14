@@ -6,7 +6,12 @@ class ProductService {
   private httpClient: UtilApplication;
 
   constructor() {
-    this.httpClient = new UtilApplication();
+    this.httpClient = new UtilApplication(
+      "https",
+      "kennyml-backend.onrender.com",
+      "",
+      "https://kennyml-backend.onrender.com/api"
+    );
   }
 
   public async getAllProducts(): Promise<
