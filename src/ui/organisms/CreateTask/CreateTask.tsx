@@ -25,10 +25,6 @@ export default function CreateTask(): React.ReactNode {
     end_date: "",
     status_id: "open",
   });
-  const dataSelect: ISelect[] = [
-    { value: "open", text: "open" },
-    { value: "closed", text: "closed" },
-  ];
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -154,14 +150,14 @@ export default function CreateTask(): React.ReactNode {
           type="date"
           error=""
         />
-        <GroupSelect
+        {/* <GroupSelect
           id=""
           name="status_id"
           label="Status"
           options={dataSelect}
           value={formDataTask.status_id}
           onChange={(e) => handleChange(e)}
-        />
+        /> */}
         <Button text="Create" type="submit" />
       </div>
     </form>
