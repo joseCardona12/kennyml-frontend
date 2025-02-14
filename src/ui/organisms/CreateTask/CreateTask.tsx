@@ -3,12 +3,11 @@ import { IconClose } from "@/assets/icons";
 import "./createTask.styles.scss";
 import {
   GroupInput,
-  GroupSelect,
   GroupTextArea,
   inputAlert,
 } from "@/ui/molecules";
 import { Button } from "@/ui/atoms";
-import { ISelect, ITask } from "@/app/core/application/interfaces";
+import {ITask } from "@/app/core/application/interfaces";
 import { useModalState } from "@/app/core/application/global-state";
 import { useState } from "react";
 import { TaskService } from "@/app/infrastructure/services";
