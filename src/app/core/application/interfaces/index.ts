@@ -18,6 +18,7 @@ import type { IStatus } from "./status.interface";
 import type { IUnit } from "./unit.interface";
 import type { IRouter, IRouterState } from "./route.interface";
 import type { IShopping } from "./shopping.interface";
+import type {ICloudinary} from "@/app/core/application/interfaces/cloudinary.interface";
 
 export {
   IFormDataLogin,
@@ -41,4 +42,5 @@ export {
   IRouter,
   IRouterState,
   IShopping,
+    ICloudinary
 };

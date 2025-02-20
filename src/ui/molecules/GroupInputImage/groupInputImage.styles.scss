@@ -1,0 +1,14 @@
+div.content-group-input-image{
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--padding-small) - .5rem);
+
+  div.inputs-image{
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius-small);
+    width: 100%;
+    padding: var(--padding-small);
+    cursor: pointer;
+  }
+
+}

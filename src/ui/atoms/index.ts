@@ -20,6 +20,7 @@ import ActionUser from "./ActionUser/ActionUser";
 import InputProductUser from "./InputProduct/InputProduct";
 import LoadingWrapper from "./LoadingWrapper/LoadingWrapper";
 import AuthUser from "./AuthUser/AuthUser";
+import ImageSelected from "@/ui/atoms/ImageSelected/ImageSelected";
 
 export {
   Input,
@@ -44,4 +45,5 @@ export {
   InputProductUser,
   LoadingWrapper,
   AuthUser,
+    ImageSelected,
 };

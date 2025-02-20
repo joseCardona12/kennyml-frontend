@@ -3,6 +3,12 @@ div.content-card {
   background-color: var(--color-white);
   border-radius: var(--border-radius-small);
   gap: var(--padding-small);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover{
+    box-shadow: var(--box-shadow-main);
+  }
 
   div.card-header {
     .header-image {

@@ -24,6 +24,9 @@ import ModalFormCreate from "./ModalFormCreate/ModalFormCreate";
 import GroupInputProduct from "./GroupInputProduct/GroupInputProduct";
 import ModalDelete from "./ModalDelete/ModalDelete";
 import Card from "./Card/Card";
+import MessageDataNotAvailable from "@/ui/molecules/MessageDataNotAvailable/MessageDataNotAvailable";
+import ModalV2 from "@/ui/molecules/ModalV2/ModalV2";
+import GroupInputImage from "@/ui/molecules/GroupInputImage/GroupInputImage";
 
 export {
   GroupInput,
@@ -52,4 +55,7 @@ export {
   GroupInputProduct,
   ModalDelete,
   Card,
+    MessageDataNotAvailable,
+    ModalV2,
+    GroupInputImage,
 };

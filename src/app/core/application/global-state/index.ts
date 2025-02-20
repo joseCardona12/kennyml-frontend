@@ -10,6 +10,7 @@ import { useModalCreateProduct } from "./modal-create-product.state";
 import { useModalDeleteState } from "./modal-delete.state";
 import { useErrorState } from "./error.state";
 import { useAuthUserState } from "./user.state";
+import {useModalShoppingState} from "@/app/core/application/global-state/modalShopping.state";
 
 export {
   useMenuState,
@@ -24,4 +25,5 @@ export {
   useModalDeleteState,
   useErrorState,
   useAuthUserState,
+    useModalShoppingState,
 };

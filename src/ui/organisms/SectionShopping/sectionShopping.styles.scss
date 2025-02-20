@@ -6,4 +6,26 @@ div.section-shopping {
   height: auto;
   padding-bottom: var(--padding-big);
 
+  div.shopping-create{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  // Styles modal create shopping
+  form.modal-form{
+  h2.modal-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  div.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-small);
+  }
+
+  }
+
 }

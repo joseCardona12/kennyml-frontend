@@ -7,6 +7,7 @@ import StatusService from "./status.service";
 import UnitService from "./unit.service";
 import ProductService from "./product.service";
 import ShoppingService from "./shopping.service";
+import cloudinaryService from "@/app/infrastructure/services/cloudinary.service";
 
 export {
   TaskService,
@@ -18,4 +19,5 @@ export {
   UnitService,
   ProductService,
   ShoppingService,
+    cloudinaryService,
 };

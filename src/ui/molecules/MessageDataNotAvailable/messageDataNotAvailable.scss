@@ -1,0 +1,11 @@
+div.shopping-error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-small);
+  height: 200px ;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-small);
+  padding: var(--padding-small);
+}

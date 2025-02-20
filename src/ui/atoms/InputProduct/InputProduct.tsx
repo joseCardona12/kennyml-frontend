@@ -6,12 +6,14 @@ interface IInputProductProps
   placeholder: string;
   name: string;
   value: string;
+  ref?:React.RefObject<HTMLInputElement> | undefined
 }
 export default function InputProductUser({
   type,
   placeholder,
   name,
   value,
+    ref,
   ...props
 }: IInputProductProps): React.ReactNode {
   return (
@@ -21,6 +23,7 @@ export default function InputProductUser({
       placeholder={placeholder}
       name={name}
       value={value}
+        ref={ref}
       {...props}
     />
   );

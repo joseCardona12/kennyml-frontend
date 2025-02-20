@@ -8,6 +8,10 @@ interface IGroupInputProductProps {
   value: string;
   label: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  style?: React.CSSProperties;
+  ref?: React.RefObject<HTMLInputElement> | undefined;
+  accept?: string;
+  multiple?: boolean;
 }
 
 export default function GroupInputProduct({
@@ -17,6 +21,10 @@ export default function GroupInputProduct({
   value,
   label,
   onChange,
+    style,
+    ref,
+    accept,
+    multiple,
 }: IGroupInputProductProps): React.ReactNode {
   return (
     <div className="content-group-product">
@@ -27,6 +35,10 @@ export default function GroupInputProduct({
         type={type}
         value={value}
         onChange={onChange}
+        style={style}
+        ref={ref}
+        accept={accept}
+        multiple={multiple}
       />
     </div>
   );
