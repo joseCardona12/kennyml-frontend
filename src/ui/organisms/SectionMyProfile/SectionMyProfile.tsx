@@ -144,13 +144,7 @@ export default function SectionMyProfile(): React.ReactNode {
       console.error("No found the cookie 'user-credentials'");
       return;
     }
-
-    try {
-      const parsedCookies = JSON.parse(cookies);
-      setUserCookie(parsedCookies);
-    } catch (error) {
-      console.error("Error al parsear la cookie:", error);
-    }
+    setUserCookie(cookies);
   }, []);
   return (
     <div className="content-my-profile">

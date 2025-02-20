@@ -9,6 +9,7 @@ import { useModalEditState } from "./modalEdit.state";
 import { useModalCreateProduct } from "./modal-create-product.state";
 import { useModalDeleteState } from "./modal-delete.state";
 import { useErrorState } from "./error.state";
+import { useAuthUserState } from "./user.state";
 
 export {
   useMenuState,
@@ -22,4 +23,5 @@ export {
   useModalCreateProduct,
   useModalDeleteState,
   useErrorState,
+  useAuthUserState,
 };

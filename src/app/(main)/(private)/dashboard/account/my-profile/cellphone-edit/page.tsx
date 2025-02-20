@@ -1,5 +1,8 @@
 "use client";
-import { useModalState } from "@/app/core/application/global-state";
+import {
+  useAuthUserState,
+  useModalState,
+} from "@/app/core/application/global-state";
 import { IConArrowLeft } from "@/assets/icons";
 import { SectionEditEmail } from "@/ui/organisms";
 import { DashboardTemplateV2 } from "@/ui/templates";
@@ -8,6 +11,7 @@ import React, { useState } from "react";
 export default function CellphoneEditView() {
   const [cellphoneUser, setCellphoneUser] = useState<string>("");
   const { showModal, setShowModal } = useModalState((state) => state);
+  const { data } = useAuthUserState((state) => state);
 
   const handleClick = (): void => {
     if (!cellphoneUser) {
@@ -26,7 +30,7 @@ export default function CellphoneEditView() {
         <SectionEditEmail
           name="Cellphone"
           onChange={(e) => setCellphoneUser(e.target.value)}
-          placeholder="Enter cellphone"
+          placeholder={data?.user?.cellphone}
           textButton="Change Cellphone"
           type="text"
           value={cellphoneUser}

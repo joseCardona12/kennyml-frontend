@@ -1,5 +1,8 @@
 "use client";
-import { useModalState } from "@/app/core/application/global-state";
+import {
+  useAuthUserState,
+  useModalState,
+} from "@/app/core/application/global-state";
 import { IConArrowLeft } from "@/assets/icons";
 import { SectionEditEmail } from "@/ui/organisms";
 import { DashboardTemplateV2 } from "@/ui/templates";
@@ -8,6 +11,7 @@ import React, { useState } from "react";
 export default function DocumentNumberEditView() {
   const [documentNumberUser, setDocumentNumberUser] = useState<string>("");
   const { showModal, setShowModal } = useModalState((state) => state);
+  const { data } = useAuthUserState((state) => state);
 
   const handleClick = (): void => {
     if (!documentNumberUser) {
@@ -26,7 +30,7 @@ export default function DocumentNumberEditView() {
         <SectionEditEmail
           name="documentNumber"
           onChange={(e) => setDocumentNumberUser(e.target.value)}
-          placeholder="Enter Document Number"
+          placeholder={data?.user?.document_number}
           textButton="Change Document Number"
           type="text"
           value={documentNumberUser}

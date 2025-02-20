@@ -23,6 +23,7 @@ import ModalAccount from "./ModalAccount/ModalAccount";
 import ModalFormCreate from "./ModalFormCreate/ModalFormCreate";
 import GroupInputProduct from "./GroupInputProduct/GroupInputProduct";
 import ModalDelete from "./ModalDelete/ModalDelete";
+import Card from "./Card/Card";
 
 export {
   GroupInput,
@@ -50,4 +51,5 @@ export {
   ModalFormCreate,
   GroupInputProduct,
   ModalDelete,
+  Card,
 };

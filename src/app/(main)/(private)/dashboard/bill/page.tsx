@@ -1,7 +1,9 @@
 import { SectionBill } from "@/ui/organisms";
 import { DashboardTemplateV2 } from "@/ui/templates";
 
-export default function BillView() {
+export default async function BillView() {
+
+
   return (
     <DashboardTemplateV2
       section={<SectionBill />}

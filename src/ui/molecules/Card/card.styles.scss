@@ -1,0 +1,27 @@
+div.content-card {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-small);
+  gap: var(--padding-small);
+
+  div.card-header {
+    .header-image {
+      border-radius: var(--border-radius-small);
+    }
+  }
+  div.card-body {
+    padding: var(--padding-small);
+
+    div.body-info {
+      padding-bottom: calc(var(--padding-small) - 0.4rem);
+      font-size: 0.9rem;
+      h2.info-title {
+        font-weight: bold;
+      }
+    }
+    div.body-buttons {
+      display: flex;
+      gap: calc(var(--padding-small) - 0.3rem);
+    }
+  }
+}

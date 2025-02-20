@@ -1,3 +1,5 @@
+import { SectionInProgress } from "@/ui/organisms";
+
 export default function InProgress() {
-  return <div className="content-in-progress">In progress page</div>;
+  return <SectionInProgress />;
 }

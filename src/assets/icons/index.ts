@@ -26,6 +26,7 @@ import { FaCheck as IconCheckWithoutBack } from "react-icons/fa";
 import { FiCommand as IconSpinner } from "react-icons/fi";
 import { BiSolidMessageSquareError as IconErrorMessage } from "react-icons/bi";
 import { FaTrash as IconTrash } from "react-icons/fa";
+import { ImBlocked as IconBlocked } from "react-icons/im";
 
 export {
   IconLock,
@@ -56,4 +57,5 @@ export {
   IConArrowLeft,
   IconErrorMessage,
   IconTrash,
+  IconBlocked,
 };

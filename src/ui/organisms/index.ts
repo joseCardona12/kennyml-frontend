@@ -18,6 +18,9 @@ import SectionAccount from "./SectionAccount/SectionAccount";
 import SectionMyProfile from "./SectionMyProfile/SectionMyProfile";
 import SectionSecurityCenter from "./SectionSecurityCenter/SectionSecurityCenter";
 import SectionChangePassword from "./SectionChangePassword/SectionChangePassword";
+import SectionErrorCredentials from "./SectionErrorCredentials/SectionErrorCredentials";
+import SectionInProgress from "./SectionInProgress/SectionInProgress";
+import { IoMdWarning as IconWarning } from "react-icons/io";
 
 export {
   FormLogin,
@@ -40,4 +43,7 @@ export {
   SectionMyProfile,
   SectionSecurityCenter,
   SectionChangePassword,
+  SectionErrorCredentials,
+  SectionInProgress,
+  IconWarning,
 };

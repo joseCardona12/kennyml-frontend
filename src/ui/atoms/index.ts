@@ -19,6 +19,7 @@ import ButtonAccount from "./ButtonAccount/ButtonAccount";
 import ActionUser from "./ActionUser/ActionUser";
 import InputProductUser from "./InputProduct/InputProduct";
 import LoadingWrapper from "./LoadingWrapper/LoadingWrapper";
+import AuthUser from "./AuthUser/AuthUser";
 
 export {
   Input,
@@ -42,4 +43,5 @@ export {
   ActionUser,
   InputProductUser,
   LoadingWrapper,
+  AuthUser,
 };

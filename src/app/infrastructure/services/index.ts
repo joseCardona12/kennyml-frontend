@@ -6,6 +6,7 @@ import PlaceService from "./place.service";
 import StatusService from "./status.service";
 import UnitService from "./unit.service";
 import ProductService from "./product.service";
+import ShoppingService from "./shopping.service";
 
 export {
   TaskService,
@@ -16,4 +17,5 @@ export {
   StatusService,
   UnitService,
   ProductService,
+  ShoppingService,
 };

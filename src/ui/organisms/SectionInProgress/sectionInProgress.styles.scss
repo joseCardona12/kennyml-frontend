@@ -1,0 +1,23 @@
+main.content-in-progress {
+  padding: var(--padding-medium);
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  section.progress-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-big);
+    background-color: var(--color-white);
+    border-radius: var(--padding-small);
+    padding: var(--padding-small);
+
+    span.section-icon {
+      font-size: 2rem;
+    }
+  }
+}

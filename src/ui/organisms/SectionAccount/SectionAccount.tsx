@@ -1,4 +1,5 @@
 "use client";
+import UtilApp from "@/app/core/application/util/utilApplication.util";
 import "./sectionAccount.styles.scss";
 import { IconCheckWithoutBack, IconUser } from "@/assets/icons";
 import { ButtonAccount } from "@/ui/atoms";
@@ -9,6 +10,11 @@ export default function SectionAccount(): React.ReactNode {
   const router = useRouter();
   const handleClick = (url: string): void => {
     router.push(`/dashboard/account/${url}`);
+  };
+
+  const handleLogOut = (): void => {
+    UtilApp.removeCookies("user-credentials");
+    router.push("/");
   };
   return (
     <div className="section-account">
@@ -29,7 +35,7 @@ export default function SectionAccount(): React.ReactNode {
         />
       </div>
 
-      <ButtonAccount text="Sign out" type="button" />
+      <ButtonAccount text="Sign out" type="button" onclick={handleLogOut} />
     </div>
   );
 }
